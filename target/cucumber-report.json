@@ -1,0 +1,372 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4651425499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeOpenBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Assert Title",
+        "description": "",
+        "id": "wikipedia;assert-title",
+        "after": [
+          {
+            "result": {
+              "duration": 1349578205,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterCloseBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 230762191,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on a wikipedia home page",
+            "match": {
+              "location": "WikipediaStepDef.i_am_on_a_wikipedia_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8585585,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see a title as wikipedia",
+            "match": {
+              "location": "WikipediaStepDef.i_should_see_a_title_as_wikipedia()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3769218137,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeOpenBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Search",
+        "description": "",
+        "id": "wikipedia;search",
+        "after": [
+          {
+            "result": {
+              "duration": 153595844,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterCloseBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 57795750,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on a wikipedia home page",
+            "match": {
+              "location": "WikipediaStepDef.i_am_on_a_wikipedia_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1908759555,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I search for a \"furry rabbits\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "furry rabbits",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaStepDef.i_search_for_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56667171,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see a \"Did you mean: fury rabbit\" suggestion",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Did you mean: fury rabbit",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaStepDef.i_should_see_a_suggestion(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@2"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3315600226,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeOpenBrowser()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Result",
+        "description": "",
+        "id": "wikipedia;result",
+        "after": [
+          {
+            "result": {
+              "duration": 1098103867,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterCloseBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59768091,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am on a wikipedia home page",
+            "match": {
+              "location": "WikipediaStepDef.i_am_on_a_wikipedia_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1989796171,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I search for a \"furry rabbits\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "furry rabbits",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaStepDef.i_search_for_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2257187370,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on the Did you mean suggestion",
+            "match": {
+              "location": "WikipediaStepDef.i_click_on_the_Did_you_mean_suggestion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53650926,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should see 20 search results on a page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 13
+                }
+              ],
+              "location": "WikipediaStepDef.i_should_see_search_results_on_a_page(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@3"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3415965527,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeOpenBrowser()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Search term first result",
+        "description": "",
+        "id": "wikipedia;search-term-first-result",
+        "after": [
+          {
+            "result": {
+              "duration": 210452040,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterCloseBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61224254,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am on a wikipedia home page",
+            "match": {
+              "location": "WikipediaStepDef.i_am_on_a_wikipedia_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1658562193,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I search for a \"furry rabbits\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "furry rabbits",
+                  "offset": 16
+                }
+              ],
+              "location": "WikipediaStepDef.i_search_for_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2065659028,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on the Did you mean suggestion",
+            "match": {
+              "location": "WikipediaStepDef.i_click_on_the_Did_you_mean_suggestion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1090406092,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on the first result",
+            "match": {
+              "location": "WikipediaStepDef.i_click_on_the_first_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 215865713,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I should see a title as \"List of fictional rabbits and hares\" and table of contents header as \"Contents\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "List of fictional rabbits and hares",
+                  "offset": 25
+                },
+                {
+                  "val": "Contents",
+                  "offset": 95
+                }
+              ],
+              "location": "WikipediaStepDef.i_should_see_a_title_as_and_table_of_contents_header_as(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 30,
+            "name": "@4"
+          }
+        ]
+      }
+    ],
+    "name": "Wikipedia",
+    "description": "\r\nAs a user\r\nI want to search for a term in wikipedia\r\nSo that i can get more information relevant to the term",
+    "id": "wikipedia",
+    "keyword": "Feature",
+    "uri": "src/test/features/Wikipedia.feature"
+  }
+]
